@@ -7,10 +7,11 @@ import urllib.parse
 def get_coordinates(query):
     """
     Input: City name and Country in string query
-    Output: Latitude and Longitude of the City in query
+    Output: Latitude and Longitude of the queried city
     """
 
     encoded_query = urllib.parse.quote(query)
+
     url = f"https://nominatim.openstreetmap.org/search?q={encoded_query}&format=json"
 
     headers = {"User-Agent": "Testing App"}
