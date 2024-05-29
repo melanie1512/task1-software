@@ -12,11 +12,6 @@ def get_coordinates(query):
 
     encoded_query = urllib.parse.quote(query)
 
-
-
-
-
-    
     url = f"https://nominatim.openstreetmap.org/search?q={encoded_query}&format=json"
 
     headers = {"User-Agent": "Testing App"}
